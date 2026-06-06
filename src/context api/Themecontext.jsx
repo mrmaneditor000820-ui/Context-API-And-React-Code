@@ -8,6 +8,8 @@ const [user, setuser] = useState(null)
 const getUser = async ()=>{
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+    const data = await response.json()
+    console.log("data=>",data);
     
   } catch (error) {
     
