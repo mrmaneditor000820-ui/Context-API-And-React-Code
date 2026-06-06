@@ -5,7 +5,14 @@ export const Theme = createContext()
 function Usercontaxt({children}) {
 const [user, setuser] = useState(null)
     
-
+const getUser = async ()=>{
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+    
+  } catch (error) {
+    
+  }
+}
 
 
 
