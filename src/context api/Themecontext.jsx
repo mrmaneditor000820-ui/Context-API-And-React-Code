@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
 export const Theme = createContext()
 
@@ -17,15 +17,12 @@ const getUser = async ()=>{
     })
     
   } catch (error) {
-    
+    console.log(error.message);
   }
 }
-
-
-
-
-
-
+useEffect(()=>{
+  getUser()
+},[])
 
 
   return (
