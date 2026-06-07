@@ -10,6 +10,11 @@ const getUser = async ()=>{
     const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
     const data = await response.json()
     console.log("data=>",data);
+    setuser({
+      name:data.name
+      name:data.name
+      name:data.name
+    })
     
   } catch (error) {
     
