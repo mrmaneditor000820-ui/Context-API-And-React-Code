@@ -11,9 +11,9 @@ const getUser = async ()=>{
     const data = await response.json()
     console.log("data=>",data);
     setuser({
-      name:data.name
-      name:data.name
-      name:data.name
+      name:data.name,
+      username:data.username,
+      email:data.email,
     })
     
   } catch (error) {
