@@ -3,7 +3,7 @@ import { Theme } from './context api/Themecontext'
 
 function App() {
    
-  const { user, setuser } = useContext(Theme)
+  const { user,} = useContext(Theme)
   console.log("user in app", user)
 
   if (!user) {
