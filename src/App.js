@@ -3,23 +3,13 @@
 
 function App() {
    
-  // const { user,} = useContext(Theme)
-  // console.log("user in app", user)
+  const { user,} = useContext(Theme)
+  console.log("user in app", user)
 
-  // if (!user) {
-  //   return <h1>Loading user...</h1>
-  // }
+  if (!user) {
+    return <h1>Loading user...</h1>
+  }
 
-  function handleClick(event) {
-  event.preventDefault();
-  alert("Default action stopped");
-}
-
-return (
-  <a href="https://google.com" onClick={handleClick}>
-    Google
-  </a>
-);
   
   return (
     <>
