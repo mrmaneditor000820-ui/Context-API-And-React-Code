@@ -1,36 +1,38 @@
-import React, { createContext, useEffect, useState } from 'react'
+// import React, { createContext, useEffect, useState } from 'react'
 
-export const Theme = createContext()
+// export const Theme = createContext()
 
-function Usercontaxt({children}) {
-const [user, setuser] = useState(null)
+// function Usercontaxt({children}) {
+// const [user, setuser] = useState(null)
     
-const getUser = async ()=>{
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
-    const data = await response.json()
-    console.log("data=>",data);
-    setuser({
-      name:data.name,
-      username:data.username,
-      email:data.email,
-    })
+// const getUser = async ()=>{
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+//     const data = await response.json()
+//     console.log("data=>",data);
+//     setuser({
+//       name:data.name,
+//       username:data.username,
+//       email:data.email,
+//     })
     
-  } catch (error) {
-    console.log(error.message);
-  }
+//   } catch (error) {
+//     console.log(error.message);
+//   }
 
-}
-useEffect(()=>{
-  getUser()
-},[])
+// }
+// useEffect(()=>{
+//   getUser()
+// },[])
 
 
-  return (
-    <Theme.Provider value={{user,setuser}}>
-    {children}
-    </Theme.Provider>
-  )
-}
+//   return (
+//     <Theme.Provider value={{user,setuser}}>
+//     {children}
+//     </Theme.Provider>
+//   )
+// }
 
-export default Usercontaxt;
+// export default Usercontaxt;
+
+
