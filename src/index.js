@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Usercontaxt from './context api/Themecontext';
+// import Usercontaxt from './context api/Themecontext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Usercontaxt>
+    {/* <Usercontaxt> */}
     <App />
-    </Usercontaxt>
+    {/* </Usercontaxt> */}
   </React.StrictMode>
 );
 
